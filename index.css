@@ -1,0 +1,109 @@
+body {
+  background-color: cornsilk;
+}
+
+h1,
+h2 {
+  background-color: rgb(255, 153, 0);
+  text-align: center;
+}
+li {
+  text-align: left;
+}
+.Sorce {
+  font-size: 30px;
+}
+a:hover {
+  color: greenyellow;
+  font-size: larger;
+}
+.mainPic {
+  text-align: center;
+}
+
+.P1 {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+.P2 {
+  width: 90%;
+}
+
+.P3 {
+  width: 30%;
+}
+
+.Instructions {
+  font-size: 70%;
+}
+
+.Ingredients {
+  font-size: 70%;
+  text-align: center;
+}
+ol {
+  padding-left: 20px;
+  margin-left: 3%;
+  margin-top: 10px;
+}
+.AllGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+.AllGrid > div {
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  background-color: wheat;
+}
+#header {
+  background-color: rgb(255, 166, 0);
+  grid-column: 1 / span 3;
+}
+
+#Ingredients {
+  grid-column: 1 / span 1;
+}
+
+#Instructions {
+  grid-column: 2 / span 1;
+}
+#link {
+  grid-column: 1 / span 3;
+}
+@media only screen and (max-width: 767px) {
+  .AllGrid {
+    grid-template-columns: auto;
+  }
+  h1 {
+    font-size: 90%;
+  }
+  li {
+    font-size: 60%;
+  }
+  ol {
+    padding-left: 20px;
+    margin-left: 2%;
+    margin-top: 10px;
+  }
+  .Sorce {
+    font-size: 50%;
+  }
+
+  #header {
+    grid-column: 1 / span 3;
+  }
+
+  #Ingredients {
+    grid-column: 1 / span 3;
+  }
+
+  #Instructions {
+    grid-column: 1 / span 3;
+  }
+  #link {
+    grid-column: 1 / span 3;
+  }
+}
